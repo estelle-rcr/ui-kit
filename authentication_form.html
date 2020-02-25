@@ -1,0 +1,101 @@
+<div class="container my-4">
+    <div class="row">
+      <div class="col-lg-12">
+            <form class="form-signin mt-3" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bouSJ3AxPZ5ybgqb8X0E237MmrF9lEkFnWmlnfRYVCc4OsSYfNfkzThc/fhRMcAhRG1pgU/nFRIIK60pPxoXUA=="  novalidate="novalidate">
+              <div class="text-center">
+                <a href="../home/index.html" aria-label="Space">
+                  <i class="fas fa-user-circle form"></i>
+                </a>
+              </div>
+              <div class="text-center mb-4">
+                <h1 class="h3 mb-3">Please sign up / in / Recover account</h1>
+                <p>Register through Facebook or Twitter, or fill out the form to get started. // Log in with Facebook, Twitter, or your email address. // Enter your email address and an email with instructions will be sent to you.</p>
+                <div class="text-center mb-3">
+                  <p class="text-muted">Have an account? / Do not have an account? <a href="signin-simple.html">Signin / Signup</a></p>
+                </div>
+              </div>
+              <hr class="my-4">
+              <!-- Signup Social Buttons -->
+              <div class="row mx-gutters-2 mb-4">
+                <div class="col-sm-6 mb-2 mb-sm-0">
+                  <button type="button" class="btn btn-block btn-facebook">
+                    <span class="fab fa-facebook-f mr-2"></span>
+                    Signup with Facebook
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <button type="button" class="btn btn-block btn-twitter">
+                    <span class="fab fa-twitter mr-2"></span>
+                    Signup with Twitter
+                  </button>
+                </div>
+              </div>
+              <!-- Divider -->
+                <hr class="my-4">          
+              <!-- Input firstname -->
+              <div class="form-group">
+                <label for="user_first_name">Firstname</label><br>
+                <input autofocus="autofocus" placeholder="Firstname..." class="form-control" type="text" name="user[first_name]" id="user_first_name">
+              </div>     
+              <!-- Input lastname --> 
+              <div class="form-group">
+                <label for="user_last_name">Lastname</label><br>
+                <input autofocus="autofocus" placeholder="Lastname..." class="form-control" type="text" name="user[last_name]" id="user_last_name">
+              </div>
+              <!-- Input description --> 
+              <div class="form-group">
+                <label for="user_description">Description</label><br>
+                <textarea autofocus="autofocus" placeholder="Your description..." class="form-control" name="user[description]" id="user_description"></textarea>
+              </div>
+              <!-- Input age --> 
+              <div class="form-group">
+                <label for="user_age">Age</label><br>
+                <input autofocus="autofocus" placeholder="Your age" class="form-control" type="number" name="user[age]" id="user_age">
+              </div>
+              <!-- Input date --> 
+              <div class="form-group">
+                <label for="user_birthdate">Birthdate</label><br>
+                <input autofocus="autofocus" placeholder="Your birthdate" class="form-control" type="datetime-local" name="user[birthdate]" id="user_birthdate">
+              </div>
+              <!-- Input email -->
+              <div class="form-group">
+                <label for="user_email">Email</label><br>
+                  <input autofocus="autofocus" placeholder='email@domain.com' class="form-control" type="email" value="" name="user[email]" id="user_email">
+                </div>   
+              <!-- Input Password -->   
+              <div class="form-group">
+                <label for="user_password">Password</label>
+                <em>(6 characters minimum)</em>
+                <br>
+                <input autocomplete="off" placeholder='P@ssw0rd$' class="form-control" type="password" name="user[password]" id="user_password" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABKRJREFUWAnNl0tsVGUUxzvTTlslZUaCloZHY6BRFkp9sDBuqgINpaBp02dIDImwKDG6ICQ8jBYlhg0rxUBYEALTpulMgBlqOqHRDSikJkZdGG0CRqAGUuwDovQ1/s7NPTffnTu3zMxGvuT2vP7n8Z3vu+dOi4r+5xUoJH8sFquamZmpTqfTVeIfCARGQ6HQH83NzaP5xsu5gL6+vuVzc3NdJN1Kkhd8Ev1MMYni4uJjra2tt3wwLvUjCxgYGFg8Pj7+MV5dPOUub3/hX0zHIpFId0NDw6Q/jO4tZOzv76+Znp6+AOb5TBw7/YduWC2Hr4J/IhOD/GswGHy7vb39tyw2S+VbAC1/ZXZ29hKoiOE8RrIvaPE5WvyjoS8CX8sRvYPufYpZYtjGS0pKNoD/wdA5bNYCCLaMYMMEWq5IEn8ZDof3P6ql9pF9jp8cma6bFLGeIv5ShdISZUzKzqPIVnISp3l20caTJsaPtwvc3dPTIx06ziZkkyvY0FnoW5l+ng7guAWnpAI5w4MkP6yy0GQy+dTU1JToGm19sqKi4kBjY+PftmwRYn1ErEOq4+i2tLW1DagsNGgKNv+p6tj595nJxUbyOIF38AwipoSfnJyMqZ9SfD8jxlWV5+fnu5VX6iqgt7d3NcFeUiN0n8FbLEOoGkwdgY90dnbu7OjoeE94jG9wd1aZePRp5AOqw+9VMM+qLNRVABXKkLEWzn8S/FtbdAhnuVQE7LdVafBPq04pMYawO0OJ+6XHZkFcBQA0J1xKgyhlB0EChEWGX8RulsgjvOjEBu+5V+icWOSoFawuVwEordluG28oSCmXSs55SGSCHiXhmDzC25ghMHGbdwhJr6sAdpnyQl0FYIyoEX5CeYOuNHg/NhvGiUUxVgfV2VUAxjtqgPecp9oKoE4sNnbX9HcVgMH8nD5nAoWnKM/5ZmKyySRdq3pCmDncR4DxOwVC64eHh0OGLOcur1Vey46xUZ3IcVl5oa4OlJaWXgQwJwZyhUdGRjqE14VtSnk/mokhxnawiwUvsZmsX5u+rgKamprGMDoA5sKhRCLxpDowSpsJ8vpCj2AUPzg4uIiNfKIyNMkH6Z4hF3k+RgTYz6vVAEiKq2bsniZIC0nTtvMVMwBzoBT9tKkTHp8Ak1V8dTrOE+NgJs7VATESTH5WnVAgfHUqlXK6oHpJEI1G9zEZH/Du16leqHyS0UXBNKmeOMf5NvyislJPB8RAFz4g8IuwofLy8k319fUP1EEouw7L7mC3kUTO1nn3sb02MTFxFpsz87FfJuaH4pu5fF+reDz+DEfxkI44Q0ScSbyOpDGe1RqMBN08o+ha0L0JdeKi/6msrGwj98uZMeon1AGaSj+elr9LwK9IkO33n8cN7Hl2vp1N3PcYbUXOBbDz9bwV1/wCmXoS3+B128OPD/l2LLg8l9APXVlZKZfzfDY7ehlQv0PPQDez6zW5JJdYOXdAwHK2dGIv7GH4YtHJIvEOvvunLCHPPzl3QOLKTkl0hPbKaDUvlTU988xtwfMqQBPQ3m/4mf0yBVlDCSr/CRW0CipAMnGzb9XU1NSRvIX7kSgo++Pg9B8wltxxbHKPZgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+              </div>
+              <!-- Input Password confirmation -->   
+              <div class="form-group">
+                <label for="user_password_confirmation">Password confirmation</label><br>
+                <input autocomplete="new-password" placeholder='P@ssw0rd$' class="form-control" type="password" name="user[password_confirmation]" id="user_password_confirmation" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABKRJREFUWAnNl0tsVGUUxzvTTlslZUaCloZHY6BRFkp9sDBuqgINpaBp02dIDImwKDG6ICQ8jBYlhg0rxUBYEALTpulMgBlqOqHRDSikJkZdGG0CRqAGUuwDovQ1/s7NPTffnTu3zMxGvuT2vP7n8Z3vu+dOi4r+5xUoJH8sFquamZmpTqfTVeIfCARGQ6HQH83NzaP5xsu5gL6+vuVzc3NdJN1Kkhd8Ev1MMYni4uJjra2tt3wwLvUjCxgYGFg8Pj7+MV5dPOUub3/hX0zHIpFId0NDw6Q/jO4tZOzv76+Znp6+AOb5TBw7/YduWC2Hr4J/IhOD/GswGHy7vb39tyw2S+VbAC1/ZXZ29hKoiOE8RrIvaPE5WvyjoS8CX8sRvYPufYpZYtjGS0pKNoD/wdA5bNYCCLaMYMMEWq5IEn8ZDof3P6ql9pF9jp8cma6bFLGeIv5ShdISZUzKzqPIVnISp3l20caTJsaPtwvc3dPTIx06ziZkkyvY0FnoW5l+ng7guAWnpAI5w4MkP6yy0GQy+dTU1JToGm19sqKi4kBjY+PftmwRYn1ErEOq4+i2tLW1DagsNGgKNv+p6tj595nJxUbyOIF38AwipoSfnJyMqZ9SfD8jxlWV5+fnu5VX6iqgt7d3NcFeUiN0n8FbLEOoGkwdgY90dnbu7OjoeE94jG9wd1aZePRp5AOqw+9VMM+qLNRVABXKkLEWzn8S/FtbdAhnuVQE7LdVafBPq04pMYawO0OJ+6XHZkFcBQA0J1xKgyhlB0EChEWGX8RulsgjvOjEBu+5V+icWOSoFawuVwEordluG28oSCmXSs55SGSCHiXhmDzC25ghMHGbdwhJr6sAdpnyQl0FYIyoEX5CeYOuNHg/NhvGiUUxVgfV2VUAxjtqgPecp9oKoE4sNnbX9HcVgMH8nD5nAoWnKM/5ZmKyySRdq3pCmDncR4DxOwVC64eHh0OGLOcur1Vey46xUZ3IcVl5oa4OlJaWXgQwJwZyhUdGRjqE14VtSnk/mokhxnawiwUvsZmsX5u+rgKamprGMDoA5sKhRCLxpDowSpsJ8vpCj2AUPzg4uIiNfKIyNMkH6Z4hF3k+RgTYz6vVAEiKq2bsniZIC0nTtvMVMwBzoBT9tKkTHp8Ak1V8dTrOE+NgJs7VATESTH5WnVAgfHUqlXK6oHpJEI1G9zEZH/Du16leqHyS0UXBNKmeOMf5NvyislJPB8RAFz4g8IuwofLy8k319fUP1EEouw7L7mC3kUTO1nn3sb02MTFxFpsz87FfJuaH4pu5fF+reDz+DEfxkI44Q0ScSbyOpDGe1RqMBN08o+ha0L0JdeKi/6msrGwj98uZMeon1AGaSj+elr9LwK9IkO33n8cN7Hl2vp1N3PcYbUXOBbDz9bwV1/wCmXoS3+B128OPD/l2LLg8l9APXVlZKZfzfDY7ehlQv0PPQDez6zW5JJdYOXdAwHK2dGIv7GH4YtHJIvEOvvunLCHPPzl3QOLKTkl0hPbKaDUvlTU988xtwfMqQBPQ3m/4mf0yBVlDCSr/CRW0CipAMnGzb9XU1NSRvIX7kSgo++Pg9B8wltxxbHKPZgAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+              </div>
+              <!-- Input Remember me -->
+              <div class="row mb-4">
+                <div class="col-6">
+                  <!-- Checkbox -->
+                  <div class="d-flex align-items-center text-muted">
+                    <div class="form-group"></div>
+                      <div class="custom-control custom-checkbox">
+                        <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" class="custom-control-input" value="1" name="user[remember_me]" id="user_remember_me">
+                        <label for="user_remember_me" class="custom-control-label">Remember me</label>
+                      </div>
+                    </div>
+                  <!-- End Checkbox -->
+                </div>
+                <div class="col-6 text-right">
+                  <a class="float-right" href="recover-account.html">Forgot your password?</a>
+                </div>
+              </div>
+                  <!-- Submit button -->
+              <div class="mb-3">
+                <button type="submit" name="commit" value="Sign up" class="btn btn-block btn-success my-4">Signup / Login</button>
+              </div>
+              </form>
+          </div>
+      </div>
+  </div>

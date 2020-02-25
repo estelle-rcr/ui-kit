@@ -11003,8 +11003,24 @@ i.footer {
 
 i.form {
   font-size: 3em;
-  color: rgba(59, 198, 171, 0.5);
+  color: #18BC9C;
   margin: 0.5em 0.5em;
+}
+
+i.card {
+  margin-inline-start: 0.5em;
+  font-size: 2em;
+  color: #18BC9C;
+  margin-right: 0.5em;
+  border: none;
+}
+
+i.comment {
+  margin-inline-start: 0.5em;
+  font-size: 2em;
+  color: #343a40;
+  margin-right: 0.5em;
+  border: none;
 }
 
 .u-divider-wrapper {
@@ -11047,14 +11063,6 @@ i.form {
   display: flex;
   align-items: flex-start;
   vertical-align: middle;
-}
-
-i.comment {
-  margin-inline-start: 0.5em;
-  font-size: 2em;
-  color: #343a40;
-  margin-right: 0.5em;
-  border: none;
 }
 
 .stretch-x {
