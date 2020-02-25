@@ -121,7 +121,7 @@
     </div>
   </div>
 
-<!-- Form -->
+<!-- Authentication Form -->
     <div class="container my-4">
       <div class="bs-docs-section clearfix">
         <div class="row">
@@ -583,11 +583,9 @@
 <div class="container space-2">
   <div class="w-lg-60 mx-auto">
     <h5 class="dt">25 Comments</h5>
-
     <hr class="mb-6">
-
-    <!-- Comments -->
-    <div>
+    <!-- Beginning of Comment -->
+    <div class='container'>
       <!-- Author -->
       <div class="media-mb-3">
         <i class="fas fa-user-circle comment secondary mx-4"></i>
@@ -599,9 +597,7 @@
         </div>
       </div>
       <!-- End Author -->
-
       <p>Since our attention spans seem to be shrinking by the day&#8202;—&#8202;keeping it simple is more important than ever.</p>
-
       <!-- Likes/Reply -->
       <ul class="list-inline d-flex">
         <li class="list-inline-item">
@@ -625,10 +621,10 @@
       </ul>
       <!-- End Likes/Reply -->
     </div>
-    <!-- End Comments -->
     <hr class="my-5">
-    <!-- Comments -->
-    <div class="mb-7">
+    <!-- End of Comment -->
+    <!-- Beginning of Comment -->
+    <div class='container'>
       <!-- Author -->
       <div class="media-mb-3">
         <img class="img-fluid u-avatar rounded-circle card mx-4" src="../../assets/img/100x100/img3.jpg" alt="/">
@@ -640,9 +636,7 @@
         </div>
       </div>
       <!-- End Author -->
-
       <p>As a Special Education teacher this resonates so well with me. Fighting with gen ed teachers to flatten for the students with learning disabilities. It also confirms some things for me in my writing.</p>
-
       <!-- Likes/Reply -->
       <ul class="list-inline d-flex">
         <li class="list-inline-item">
@@ -667,7 +661,7 @@
       <!-- End Likes/Reply -->
       <hr class="my-5">
     </div>
-    <!-- End Comments -->
+    <!-- End of Comment -->
       <!-- Author -->
       <div class="media-mb-3">
         <img class="img-fluid u-avatar rounded-circle card mx-4" src="../../assets/img/100x100/img3.jpg" alt="/">
@@ -679,16 +673,18 @@
       </div>
       <!-- End Author -->
       <!-- Beginning of form for comment -->
-    <form class="form-comment mt-3" id="new_comment" action="/comment/add" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bouSJ3AxPZ5ybgqb8X0E237MmrF9lEkFnWmlnfRYVCc4OsSYfNfkzThc/fhRMcAhRG1pgU/nFRIIK60pPxoXUA=="  novalidate="novalidate">
-      <div class="form-group">
-        <label for="user_description">Write your comment:</label><br>
-        <textarea autofocus="autofocus" placeholder="Write here what you'd like to share" class="form-control" name="comment[content]" id="comment_content"></textarea>
+      <div class='container'>
+        <form class="form-comment mt-3" id="new_comment" action="/comment/add" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="bouSJ3AxPZ5ybgqb8X0E237MmrF9lEkFnWmlnfRYVCc4OsSYfNfkzThc/fhRMcAhRG1pgU/nFRIIK60pPxoXUA=="  novalidate="novalidate">
+          <div class="form-group">
+            <label for="user_description">Write your comment:</label><br>
+            <textarea autofocus="autofocus" placeholder="Write here what you'd like to share" class="form-control" name="comment[content]" id="comment_content"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="submit" name="commit" value="Sign up" class="btn btn-block btn-primary">Signup / Login</button>
+          </div>
+        </form>
       </div>
-  <div class="mb-3">
-    <button type="submit" name="commit" value="Sign up" class="btn btn-block btn-primary">Signup / Login</button>
-  </div>
-  </form>
-  <!-- End of form for comment -->
+      <!-- End of form for comment -->
   </div>
 </div>
 
