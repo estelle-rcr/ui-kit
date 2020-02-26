@@ -5643,8 +5643,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   height: 350px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.339),rgba(0, 0, 0, 0.339)),url("https://images.unsplash.com/photo-1581090698407-7d93959da202?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -11123,3 +11121,17 @@ i.comment {
   width: 2rem;
   height: 2rem;
 }
+
+.no-space {
+ margin: 0;
+ padding: 0;
+}
+
+.contouring {
+  border: 1px solid #00000033;
+  border-radius: 0.25rem;
+  margin-right: 1em;
+  margin-left: 1em;
+  padding: 1.5em;
+  background-color: #fafbfb ;
+ }
